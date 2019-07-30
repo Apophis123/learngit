@@ -52,7 +52,6 @@ public class BookController extends SQL {
     }
 
     @ResponseBody
-//    @RequestMapping("/delete/{id}")
     @DeleteMapping("/del/{id}")
     public List<Book> deletaBook(@PathVariable("id") Integer id) {
         bookMapper.deleteBookById(id);
@@ -157,7 +156,7 @@ public class BookController extends SQL {
     }
 
 
-    @RequestMapping("/delete/{id}")
+    @RequestMapping(value = "/delete/{id}")
 //    @RequestMapping(value = "/delete/{id}",method = RequestMethod.DELETE)
     public String deleteDept(@PathVariable("id") Integer id, Model model) {
         bookMapper.deleteBookById(id);
