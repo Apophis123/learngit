@@ -171,5 +171,4 @@ public class BookController extends SQL {
         model.addAttribute("book", book);
         return book;
     }
-
 }
